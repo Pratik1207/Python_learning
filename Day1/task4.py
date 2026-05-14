@@ -37,3 +37,5 @@ userName = input("What is your name?")
 lenght_of_UserName = len(userName)
 
 print(lenght_of_UserName)
+
+# this is  how we calculate the length
