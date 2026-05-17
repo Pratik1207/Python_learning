@@ -12,4 +12,4 @@ total_bill = (bill + ((tip/100) * bill))
 
 each_person_amount = (total_bill/no_of_person)
 
-print(f"Each person should pay: ${round(Each_person_amount, 2)}")
+print(f"Each person should pay: ${round(each_person_amount, 2)}")
