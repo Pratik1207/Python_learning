@@ -4,7 +4,8 @@ import random
 
 choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissor: "))
 
-rock = '''    _______
+rock = '''   
+    _______
 ---'   ____)
       (_____)
       (_____)
@@ -12,7 +13,8 @@ rock = '''    _______
 ---.__(___)
 '''
 
-scissor = '''   _______
+scissor = ''' 
+    _______
 ---'   ____)____
           ______)
        __________)
@@ -34,25 +36,30 @@ paper = '''
 if choice < 0 or choice > 2:
     print("You entered an Invalid Number.")
 else:
-    print(f"Your Choice is: {choice}\n")
+    game_choice = [rock, paper, scissor]
+    
+    print("Your Choice is:")
+    print(game_choice[choice])
 
-    if choice == 0:
-        print(rock)
-    elif choice == 1:
-        print(paper)
-    else:
-        print(scissor)
+
+    # if choice == 0:
+    #     print(rock)
+    # elif choice == 1:
+    #     print(paper)
+    # else:
+    #     print(scissor)
 
     computerChoice = random.randint(0, 2)
 
-    print(f"Computer Choice is: {computerChoice}\n")
+    print("Computer Choice is:")
+    print(game_choice[computerChoice])
 
-    if computerChoice == 0:
-        print(rock)
-    elif computerChoice == 1:
-        print(paper)
-    else:
-        print(scissor)
+    # if computerChoice == 0:
+    #     print(rock)
+    # elif computerChoice == 1:
+    #     print(paper)
+    # else:
+    #     print(scissor)
 
     if computerChoice == choice:
         print("It is a draw.")
