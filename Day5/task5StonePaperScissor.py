@@ -61,19 +61,26 @@ else:
     # else:
     #     print(scissor)
 
-    if computerChoice == choice:
+    # if computerChoice == choice:
+    #     print("It is a draw.")
+    # elif choice == 0 and computerChoice == 1:
+    #     print("You Lose!!!")
+    # elif choice == 0 and computerChoice == 2:
+    #     print("You Won!!!")
+
+    # elif choice == 1 and computerChoice == 0:
+    #     print("You Won!!!")
+    # elif choice == 1 and computerChoice == 2:
+    #     print("You Lose!!!")
+
+    # elif choice == 2 and computerChoice == 0:
+    #     print("You Lose!!!")
+    # elif choice == 2 and computerChoice == 1:
+    #     print("You Won!!!")
+
+    if (choice == 0 and computerChoice == 2) or (choice == 1 and computerChoice == 0) or (choice == 2 and computerChoice == 1):
+        print("You Win!!!")
+    elif computerChoice == choice:
         print("It is a draw.")
-    elif choice == 0 and computerChoice == 1:
+    else:
         print("You Lose!!!")
-    elif choice == 0 and computerChoice == 2:
-        print("You Won!!!")
-
-    elif choice == 1 and computerChoice == 0:
-        print("You Won!!!")
-    elif choice == 1 and computerChoice == 2:
-        print("You Lose!!!")
-
-    elif choice == 2 and computerChoice == 0:
-        print("You Lose!!!")
-    elif choice == 2 and computerChoice == 1:
-        print("You Won!!!")
